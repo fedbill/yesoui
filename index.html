@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    <style>
+        .demo-form {width: 45%; margin: 0 auto;}
+        .btn-info, .btn-default{
+            margin-top: 10px;
+            background-color: green;
+            border-color: green;
+            color: aliceblue;
+
+        }
+        .btn-info:hover, .btn-default.btn-default:hover {
+            background-color: green;
+            border-color: green;
+        }
+        body{
+            margin: 1em;
+        }
+        .radio-button input[type="radio"] {
+            display: none;
+
+        }
+        .radio-button label {
+            display: inline-block;
+            background-color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 100;
+            border: 1px solid #eee;
+            border-radius: 10px;
+
+
+
+        }
+
+        .radio-button input[type="radio"]:checked+label {
+            background-color: green;
+            color: #fff;
+        }
+
+    </style>
+    </head>
+    <body>
+
+    <form class="demo-form" action="form-data.php"method="post">
+
+        <div class="form-section">
+        </fieldset>
+           <select class="form-control" name="trim" id="trim" required>
+            <option value="">select trim</option>
+            <option>other</option>
+           </select>
+           <select class="form-control" name="mileage" id="mileage" required>
+            <option value="">select mileage</option>
+            <option value="1">0-10000 km</option>
+            <option value="2">10000-20000 km</option>
+            <option value="3">20000-30000 km</option>
+            <option value="4">30000-40000 km</option>
+            <option value="5">40000-50000 km</option>
+            <option value="6">50000-60000 km</option>
+            <option value="7">60000-70000 km</option>
+            <option value="8">70000-80000 km</option>
+            <option value="9">80000-90000 km</option>
+            <option value="10">90000-100000 km</option>
+            <option value="11">100000-110000 km</option>
+            <option value="12">110000-120000 km</option>
+            <option value="13">120000-130000 km</option>
+            <option value="14">130000-140000 km</option>
+            <option value="15">140000-150000 km</option>
+            <option value="16">150000-160000 km</option>
+            <option value="17">160000-170000 km</option>
+            <option value="18">170000-180000 km</option>
+            <option value="19">180000-190000 km</option>
+            <option value="20">190000-200000 km</option>
+            <option value="21">200000-210000 km</option>
+            <option value="22">210000-220000 km</option>
+            <option value="23">220000-230000 km</option>
+            <option value="24">230000-240000 km</option>
+            <option value="25">more than 240000 km</option>
+           </select>
+           <br/>
+        <div class="input-field">
+            <label class="mnbl">has GCC Specs?</label>
+            <div class="btn-group radio-button">
+                <div class="radio-button">
+                    <input type="radio" id="GCC" name="gccspecs" value="all" checked>
+                    <label for="GCC">GCC</label>
+                    <input type="radio" id="japanese" name="gccspecs">
+                    <input for="japanese">japanese</label>
+                    <input type="radio" id="european" name="gccspecs">
+                    <input for="european">European</label>
+                    <input type="radio" id="US" name="gccspecs">
+                    <input for="US">US</label>
+                    <input type="radio" id="idontknow" name="gccspecs">
+                    <label for="idontknow">I don't know</label>
+                </div>
+            
+            </div>
+        </div>    
+            <br/>
+            <div class="input-fied">
+                <label class="mnLbl">how do you rate you car ?</label>
+                <div class="btn-group radio-button">
+                    <div class="radio-button">
+                        <input type="radio" id="average" name="radiosRat">
+                        <input for="average">average</label>
+                        <input type="radio" id="belowaverage" name="radiosRat">
+                        <input for="belowaverage">belowaverage</label>
+                        <input type="radio" id="good" name="radioRate">
+                        <label for="good">good</label>
+
+                    </div>
+                </div>
+            </div>
+        </br>
+        <input type="text" class="form-control" name="name" placeholder="full name" required>
+    </br>
+    <input type="text" class="form-control" name="number" id="mobile" placeholder="mobile No" required>
+</br>
+<input type="number" class="form-control" name="carworth" id="carworth" placeholder="suggest what your car is worth">
+ </div>
+</br>
+    <div class="text-center">
+        <input type="submit" class="btn btn-default">
+    </div>
+</br>
+
+
+</form>
+            
+             </body>
+</html>
